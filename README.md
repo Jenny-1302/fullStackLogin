@@ -46,12 +46,12 @@ La aplicación incluye algunos usuarios de prueba para facilitar las pruebas:
 
 - **Usuario Administrador:**
   - Correo Electrónico: jenny@jenny.com
-  - Contraseña: 12345
+  - Contraseña: 123456
   - Rol: Administrador
 
 - **Usuario Regular:**
   - Correo Electrónico: user@user.com
-  - Contraseña: 12345
+  - Contraseña: 123456
   - Rol: Usuario
 
 
