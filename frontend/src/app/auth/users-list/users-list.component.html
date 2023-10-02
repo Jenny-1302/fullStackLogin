@@ -1,0 +1,31 @@
+<button class="btn btn-danger" (click)="logout()">
+    <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+</button>
+
+<div class="container mt-4">
+    <h2>Listado de Usuarios</h2>
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="input-group mb-2" style="max-width: 25%;">
+            <input type="text" [(ngModel)]="searchTerm" placeholder="Buscar por correo electrónico"
+                class="form-control">
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo Electrónico</th>
+                <th>Rol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of filterUsers(); let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.rol }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
